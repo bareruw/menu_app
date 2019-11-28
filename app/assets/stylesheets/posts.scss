@@ -7,6 +7,8 @@ body {
   font-size: 14px;
   color: #333;
   margin: 0 auto;
+  height: calc(100vh - 100px);
+  width: 100%;
 }
 h1,h2,h3,h4,h5,h6,p {
   padding: 10px 0;
@@ -18,6 +20,23 @@ h1,h2,h3,h4,h5,h6,p {
   width: 100%;
   background-color: aqua;
 }
+
+.outline{
+  text-align: center;
+  height:calc(100vh - 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.roulette {
+  border:1px solid #000000;
+  font-size:40px;
+  width:60px;
+  height: 60px;
+  
+}
+
 .purpose{
   text-align: center;
   line-height: 90px;

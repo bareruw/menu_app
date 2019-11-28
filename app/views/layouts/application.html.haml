@@ -7,5 +7,25 @@
     = csp_meta_tag
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    :javascript
+      let roulette;
+
+        // ルーレットを開始
+        function start() {
+          roulette = setInterval(function() {
+            // 1〜10の範囲でランダムな数値を作成
+            let idx = Math.floor( Math.random() * 5 ) + 1;
+            // ルーレット
+            document.getElementById("roulette").innerHTML = idx;
+          }, 50);
+        }
+  
+        // ルーレットを停止
+        function stop() {
+          if(roulette) {
+            clearInterval(roulette);
+          }
+      }
   %body
+    
     = yield
