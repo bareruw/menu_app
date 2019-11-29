@@ -18,7 +18,7 @@ h1,h2,h3,h4,h5,h6,p {
 .header{
   height: 100px;
   width: 100%;
-  background-color: aqua;
+  background-color:yellow;
 }
 
 .outline{
@@ -27,14 +27,26 @@ h1,h2,h3,h4,h5,h6,p {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url('fruit-1213041_1280.jpg');
 }
 
 .roulette {
-  border:1px solid #000000;
-  font-size:40px;
+  font-size:50px;
   width:60px;
   height: 60px;
-  
+  color: white;
+  padding-bottom: 100px;
+  // writing-mode: tb-rl;
+}
+
+
+.r_btn{
+  color: red;
+  font-size: 32px;
+}
+
+#start{
+  margin-bottom: 20px;
 }
 
 .purpose{

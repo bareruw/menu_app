@@ -12,12 +12,13 @@
 
         // ルーレットを開始
         function start() {
+          let array = ['牛丼','ラーメン','カレー','煮干し','わかめ','うどん','焼肉','寿司'];
           roulette = setInterval(function() {
             // 1〜10の範囲でランダムな数値を作成
-            let idx = Math.floor( Math.random() * 5 ) + 1;
+            var idx = Math.floor(Math.random() *  array.length);
             // ルーレット
-            document.getElementById("roulette").innerHTML = idx;
-          }, 50);
+            document.getElementById("roulette").innerHTML = array[idx];
+          }, 80);
         }
   
         // ルーレットを停止
