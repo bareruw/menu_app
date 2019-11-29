@@ -7,5 +7,26 @@
     = csp_meta_tag
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    :javascript
+      let roulette;
+
+        // ルーレットを開始
+        function start() {
+          let array = ['牛丼','ラーメン','カレー','煮干し','わかめ','うどん','焼肉','寿司'];
+          roulette = setInterval(function() {
+            // 1〜10の範囲でランダムな数値を作成
+            var idx = Math.floor(Math.random() *  array.length);
+            // ルーレット
+            document.getElementById("roulette").innerHTML = array[idx];
+          }, 80);
+        }
+  
+        // ルーレットを停止
+        function stop() {
+          if(roulette) {
+            clearInterval(roulette);
+          }
+      }
   %body
+    
     = yield

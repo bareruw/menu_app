@@ -1,2 +1,9 @@
 .header
   %p.purpose 〜今日のご飯に迷った時のアプリ〜
+.outline
+  .roulette#roulette 飲食物
+  .roulettebtn
+    %input.r_btn{:id => "start", :style => "width: 100%; padding: 10px;", :type => "button", :value => "スタート", :onclick => "start();"}/
+    %input.r_btn{:id => "stop", :style => "width: 100%; padding: 10px;", :type => "button", :value => "ストップ", :onclick => "stop();"}/
+  
+  
